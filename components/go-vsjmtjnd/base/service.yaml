@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: go-vsjmtjnd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: go-vsjmtjnd 
+  name: go-vsjmtjnd
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: go-vsjmtjnd 
